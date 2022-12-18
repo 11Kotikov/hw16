@@ -77,20 +77,21 @@
 # Задача 4. Напишите программу, которая по заданному номеру четверти, 
 # показывает диапазон возможных координат точек в этой четверти (x и y).
 
-def checking_quaters_range (quarter):
-    if quarter == 1: 
-        print("In the first quarter x>0 and y>0")
-    elif(quarter == 2):
-        print("In the second quarter x<0 and y>0")
-    elif(quarter == 3):
-        print("In the third quarter x<0 and y<0")
-    elif(quarter == 4):
-        print("In the fouth quarter x>0 and y<0")
-    else:
-        print("There isn't such a quarter")
+# def checking_quaters_range (quarter):
+#     if quarter == 1: 
+#         print("In the first quarter x>0 and y>0")
+#     elif quarter == 2:
+#         print("In the second quarter x<0 and y>0")
+#     elif quarter == 3:
+#         print("In the third quarter x<0 and y<0")
+#     elif quarter == 4:
+#         print("In the fouth quarter x>0 and y<0")
+#     else:
+#         print("There isn't such a quarter")
 
-print ('Hello, this program let you check which X and Y values in your input quarter ')
-print ('Pls, input integer quarter value (e.g. 1 or 2 or 3 or 4 only) :')
-input_quarter = int (input())
-checking_quaters_range(input_quarter)
+# print ('Hello, this program let you check which X and Y values in your input quarter ')
+# print ('Pls, input integer quarter value (e.g. 1 or 2 or 3 or 4 only) :')
+# input_quarter = int (input())
+# checking_quaters_range(input_quarter)
+
 
