@@ -22,7 +22,6 @@
 #     else:
 #         print ('Sorry, but you\'re not a winner, run the program again')
 
-
 # print ('Input the number of the day in week: ')
 # day_week = input()
 # if (day_week.isdigit()==True):
