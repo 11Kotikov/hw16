@@ -37,7 +37,7 @@
 #         for z in 0,1:
 #             print(f'x = {x}, y = {y}, z = {z} ->',not (x or y or z) == (not x and not y and not z))
 
-# Напишите программу, которая принимает на вход координаты точки (X и Y), 
+# Задача 3. Напишите программу, которая принимает на вход координаты точки (X и Y), 
 # причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, 
 # в которой находится эта точка (или на какой оси она находится).
 # Пример:
@@ -45,32 +45,52 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-def checking_quaters (x,y):
-    if (x>0) & (y>0):
-        print ('It\'s in the first quater')
-    elif (x<0) & (y>0):
-        print ('It\'s in the second quater') 
-    elif (x<0) & (y<0):
-        print ('It\'s in the third quater')
-    elif (x>0) & (y<0):
-        print ('It\'s in the fouth quater')
-    elif (x==0) & (y<0):
-        print ('It\'s located on the axis Y between the third and fouth quater')
-    elif (x>0) & (y==0):
-        print ('It\'s located on the axis X between the second and third quater')
-    elif (x==0) & (y>0):
-        print ('It\'s located on the axis Y between the first and second quater')
-    elif (x<0) & (y==0):
-        print ('It\'s located on the axis X between the first and third quater')
-    elif (x==0) & (y==0):
-        print ('Sorry, it can\'t be in ZERO. But if you wonder - It\'s in the center of the coordinate system')
-    else:
-        print ('wow')
+# def checking_quarters (x,y):
+#     if (x>0) & (y>0):
+#         print ('It\'s in the first quarter')
+#     elif (x<0) & (y>0):
+#         print ('It\'s in the second quarter') 
+#     elif (x<0) & (y<0):
+#         print ('It\'s in the third quarter')
+#     elif (x>0) & (y<0):
+#         print ('It\'s in the fouth quarter')
+#     elif (x==0) & (y<0):
+#         print ('It\'s located on the axis Y between the third and fouth quarter')
+#     elif (x>0) & (y==0):
+#         print ('It\'s located on the axis X between the first and fouth quarter')
+#     elif (x==0) & (y>0):
+#         print ('It\'s located on the axis Y between the third and fouth quarter')
+#     elif (x<0) & (y==0):
+#         print ('It\'s located on the axis X between the second and third quarter')
+#     elif (x==0) & (y==0):
+#         print ('Sorry, it can\'t be in ZERO. But if you wonder - It\'s in the center of the coordinate system')
+#     else:
+#         print ('wow')
 
-print ('Hello, this program let you check the quaters for X and Y values in 2D dimension ')
-print ('Pls, input integer or float values for X:')
-x = float(input())
-print ('Pls, input integer or float values for Y:')
-y = float(input())
-checking_quaters(x,y)
+# print ('Hello, this program let you check the quarters for X and Y values in 2D dimension ')
+# print ('Pls, input integer or float values for X:')
+# x = float(input())
+# print ('Pls, input integer or float values for Y:')
+# y = float(input())
+# checking_quarters(x,y)
+
+# Задача 4. Напишите программу, которая по заданному номеру четверти, 
+# показывает диапазон возможных координат точек в этой четверти (x и y).
+
+def checking_quaters_range (quarter):
+    if quarter == 1: 
+        print("In the first quarter x>0 and y>0")
+    elif(quarter == 2):
+        print("In the second quarter x<0 and y>0")
+    elif(quarter == 3):
+        print("In the third quarter x<0 and y<0")
+    elif(quarter == 4):
+        print("In the fouth quarter x>0 and y<0")
+    else:
+        print("There isn't such a quarter")
+
+print ('Hello, this program let you check which X and Y values in your input quarter ')
+print ('Pls, input integer quarter value (e.g. 1 or 2 or 3 or 4 only) :')
+input_quarter = int (input())
+checking_quaters_range(input_quarter)
 
