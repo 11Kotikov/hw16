@@ -63,7 +63,7 @@ def checking_quaters (x,y):
     elif (x<0) & (y==0):
         print ('It\'s located on the axis X between the first and third quater')
     elif (x==0) & (y==0):
-        print ('Sorry, it can't be in ZERO. Bu if you wonder - it\'s in the center of the coordinate system')
+        print ('Sorry, it can\'t be in ZERO. But if you wonder - It\'s in the center of the coordinate system')
     else:
         print ('wow')
 
