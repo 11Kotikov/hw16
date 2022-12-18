@@ -94,4 +94,27 @@
 # input_quarter = int (input())
 # checking_quaters_range(input_quarter)
 
+# Напишите программу, которая принимает на вход координаты двух точек и 
+# находит расстояние между ними в 2D пространстве.
+# Пример:
+# - A (3,6); B (2,1) -> 5,09
+# - A (7,-5); B (1,-1) -> 7,21
+
+import math #пошел по пути наименьшего сопротивления, хотя можно было просто умножить на 0.5
+
+def distance_between_two_dots (xa, xb, ya, yb):
+    return math.sqrt(((xb-xa)**2) + ((yb-ya)**2))
+
+print("Input coordinate xa: ")
+xa = float(input()) #тут бы double, конечно
+print("Input coordinate xb: ")
+xb = float(input())
+print("Input coordinate ya: ")
+ya = float(input())
+print("Input coordinate yb: ")
+yb = float(input())
+result = distance_between_two_dots (xa,xb,ya,yb)
+
+print(f"The distance between two dots is {round(result, 3)}")
+
 
